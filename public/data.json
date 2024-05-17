@@ -1,0 +1,48 @@
+[
+    {
+      "bannerImage": "https://i.ibb.co/kG4mFGZ/1663925670472.png",
+      "postTitle": "Understanding React Hooks",
+      "authorImage": "https://wallpaperaccess.com/full/2562964.jpg",
+      "authorName": "Yousuf Samaila",
+      "postDate": "2024-05-01",
+      "postReadingTime": "5 min",
+      "postTags": ["React", "Hooks", "JavaScript"]
+    },
+    {
+      "bannerImage": "https://i.ibb.co/Kh1cKqY/modern-javascript-basics.png",
+      "postTitle": "A Guide to Modern JavaScript",
+      "authorImage": "https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg",
+      "authorName": "Andrew Schmelyun",
+      "postDate": "2024-04-22",
+      "postReadingTime": "8 min",
+      "postTags": ["JavaScript", "ES6", "Web Development"]
+    },
+    {
+      "bannerImage": "https://i.ibb.co/Hts9tjv/maxresdefault.jpg",
+      "postTitle": "CSS Grid vs. Flexbox",
+      "authorImage": "https://tse4.mm.bing.net/th?id=OIP.UGlKxiZQylR3CnJIXSbFIAHaLL&pid=Api&P=0&h=220",
+      "authorName": "Alice Johnson",
+      "postDate": "2024-03-15",
+      "postReadingTime": "7 min",
+      "postTags": ["CSS", "Web Design", "Flexbox", "Grid"]
+    },
+    {
+      "bannerImage": "https://i.ibb.co/b7vxLRk/maxresdefault-1.jpg",
+      "postTitle": "Building Your First Node.js App",
+      "authorImage": "https://c.pxhere.com/photos/dd/a6/business_man_businessman_corporate_suit_executive_successful_entrepreneur-675843.jpg!d",
+      "authorName": "Robert Brown",
+      "postDate": "2024-02-28",
+      "postReadingTime": "10 min",
+      "postTags": ["Node.js", "Backend", "JavaScript"]
+    },
+    {
+      "bannerImage": "https://i.ibb.co/25mPtQY/ix473-Yfs6.jpg",
+      "postTitle": "Introduction to TypeScript",
+      "authorImage": "https://c.stocksy.com/a/dTW500/z9/1316485.jpg",
+      "authorName": "Emily Davis",
+      "postDate": "2024-01-10",
+      "postReadingTime": "6 min",
+      "postTags": ["TypeScript", "JavaScript", "Programming"]
+    }
+  ]
+  
