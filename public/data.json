@@ -1,5 +1,6 @@
 [
     {
+       "id": 1, 
       "bannerImage": "https://i.ibb.co/kG4mFGZ/1663925670472.png",
       "postTitle": "Understanding React Hooks",
       "authorImage": "https://wallpaperaccess.com/full/2562964.jpg",
@@ -9,6 +10,7 @@
       "postTags": ["React", "Hooks", "JavaScript"]
     },
     {
+        "id": 2, 
       "bannerImage": "https://i.ibb.co/Kh1cKqY/modern-javascript-basics.png",
       "postTitle": "A Guide to Modern JavaScript",
       "authorImage": "https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg",
@@ -18,6 +20,7 @@
       "postTags": ["JavaScript", "ES6", "Web Development"]
     },
     {
+        "id": 3, 
       "bannerImage": "https://i.ibb.co/Hts9tjv/maxresdefault.jpg",
       "postTitle": "CSS Grid vs. Flexbox",
       "authorImage": "https://tse4.mm.bing.net/th?id=OIP.UGlKxiZQylR3CnJIXSbFIAHaLL&pid=Api&P=0&h=220",
@@ -27,6 +30,7 @@
       "postTags": ["CSS", "Web Design", "Flexbox", "Grid"]
     },
     {
+        "id": 4, 
       "bannerImage": "https://i.ibb.co/b7vxLRk/maxresdefault-1.jpg",
       "postTitle": "Building Your First Node.js App",
       "authorImage": "https://c.pxhere.com/photos/dd/a6/business_man_businessman_corporate_suit_executive_successful_entrepreneur-675843.jpg!d",
@@ -36,6 +40,7 @@
       "postTags": ["Node.js", "Backend", "JavaScript"]
     },
     {
+        "id": 5, 
       "bannerImage": "https://i.ibb.co/25mPtQY/ix473-Yfs6.jpg",
       "postTitle": "Introduction to TypeScript",
       "authorImage": "https://c.stocksy.com/a/dTW500/z9/1316485.jpg",
