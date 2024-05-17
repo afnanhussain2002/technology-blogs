@@ -1,3 +1,4 @@
+import { CiBookmark } from "react-icons/ci";
 const Blog = ({blog}) => {
     console.log(blog);
     const {bannerImage, postTitle, authorImage, postDate, postTags, authorName,  postReadingTime } = blog 
@@ -8,13 +9,14 @@ const Blog = ({blog}) => {
                 <div className="flex gap-3 col-span-4">
                 <img className="w-10" src={authorImage} alt={authorName} />
                 <div>
-                    <h5 className="font-semibold text-xl">{authorName}</h5>
+                    <h5 className="font-semibold text-2xl">{authorName}</h5>
                     <p className="text-sm">{postDate}</p>
                 </div>
 
                 </div>
-                <div>
+                <div className="flex items-center gap-1 text-xl">
                     <h6 className="font-semibold">{postReadingTime} min read </h6>
+                    <CiBookmark/>
                 </div>
 
             </div>
