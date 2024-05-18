@@ -17,7 +17,7 @@
       "authorName": "Andrew Schmelyun",
       "postDate": "2024-04-22",
       "postReadingTime": 8 ,
-      "postTags": ["JavaScript", "ES6", "Web Development"]
+      "postTags": ["JavaScript", "ES6", "Web_Development"]
     },
     {
         "id": 3, 
@@ -27,7 +27,7 @@
       "authorName": "Alice Johnson",
       "postDate": "2024-03-15",
       "postReadingTime": 7,
-      "postTags": ["CSS", "Web Design", "Flexbox", "Grid"]
+      "postTags": ["CSS", "Web_Design", "Flexbox", "Grid"]
     },
     {
         "id": 4, 
