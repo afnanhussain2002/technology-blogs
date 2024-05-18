@@ -6,8 +6,9 @@ import Bookmark from './components/bookmark/Bookmark'
 
 function App() {
    const [bookmarks, setBookmark ] = useState([])
+   const [readingTime, setReadingTime] = useState(0);
 
-
+// adding bookmark
    const handleBookmarkBTN = blog =>{
    
     console.log(blog);
@@ -15,6 +16,12 @@ function App() {
      setBookmark(bookmarkItem)
     
    }
+
+  //  adding reading time
+
+  const handleReadingTime = time =>{
+    setReadingTime(readingTime + time)
+  }
  
   return (
     <div className='max-w-7xl mx-auto'>
@@ -22,10 +29,18 @@ function App() {
       <div className='grid grid-cols-3 justify-center'>
         <div className='col-span-2'>
 
-        <Blogs handleBookmarkBTN={handleBookmarkBTN}/>
+        <Blogs 
+        handleBookmarkBTN={handleBookmarkBTN}
+        handleReadingTime={handleReadingTime}
+        
+        />
         </div>
-        <div>
-          <Bookmark bookmarks={bookmarks}/>
+        <div className='bg-gray-200'>
+          <Bookmark 
+          bookmarks={bookmarks}
+          readingTime={readingTime}
+          
+          />
         </div>
       </div>
     </div>
