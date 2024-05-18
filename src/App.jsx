@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Blogs from './blogs/Blogs'
 import Header from './components/Header'
 import Bookmark from './components/bookmark/Bookmark'
+import { addDataToLS } from './utilitis/localstorage'
 
 function App() {
    const [bookmarks, setBookmark ] = useState([])
@@ -14,6 +15,8 @@ function App() {
     console.log(blog);
      const bookmarkItem = [...bookmarks, blog]
      setBookmark(bookmarkItem)
+     addDataToLS(blog.id)
+     
     
    }
 
