@@ -1,13 +1,8 @@
 import { useEffect, useState } from "react";
 import Blog from "../singleBlog/Blog";
 
-const Blogs = ({handleBookmarkBTN, handleReadingTime}) => {
-  const [blogs, setBlogs] = useState([]);
-  useEffect(() => {
-    fetch("data.json")
-      .then((res) => res.json())
-      .then((data) => setBlogs(data));
-  }, []);
+const Blogs = ({handleBookmarkBTN, handleReadingTime, blogs}) => {
+
   return (
     <div>
       {blogs.map((blog) => (

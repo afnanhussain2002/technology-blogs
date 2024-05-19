@@ -24,7 +24,7 @@ const addDataToLS = id =>{
 
 const removeDataFromLS = id =>{
     const items = getItemFromLS()
-    const remainingItem = items.filter(item => item.id !== id)
+    const remainingItem = items.filter(idx => idx !== id)
     saveDataToLS(remainingItem)
 
 }
