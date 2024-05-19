@@ -1,3 +1,5 @@
+import swal from 'sweetalert';
+
 
 import { useEffect, useState } from 'react'
 import Blogs from './blogs/Blogs'
@@ -10,22 +12,42 @@ function App() {
    const [bookmarks, setBookmark ] = useState([])
    const [readingTime, setReadingTime] = useState(0);
 
+  
+   
+
 // adding bookmark
-   const handleBookmarkBTN = blog =>{
+const handleBookmarkBTN = blog =>{
      const bookmarkItem = [...bookmarks, blog]
-     const existBookmarks = bookmarkItem.find(booked => booked.id === blog.id)
+     const existBookmarks = bookmarks.find((booked) => booked.id === blog.id)
+     console.log(existBookmarks);
      if(existBookmarks){
-      return alert('This Blog Already Exists')
+      return swal({
+        title: "This Post Already Exists",
+        icon:"warning"
+ 
+      });
+     }else{
+       setBookmark(bookmarkItem)
+       addDataToLS(blog.id)
+       return swal({
+        title: "Post Added On Bookmarked",
+        icon:"success"
+ 
+      });
      }
-     setBookmark(bookmarkItem)
-     addDataToLS(blog.id)
    
    }
 
    const handleRemoveFromLS = id =>{
      const reamainingBlogs = bookmarks.filter(blog => blog.id !== id)
      setBookmark(reamainingBlogs)
+     swal({
+      title: "Bookmarked Removed",
+      icon:"success"
+
+    });
      removeDataFromLS(id)
+     
    }
 
    
@@ -38,7 +60,7 @@ function App() {
    useEffect(()=>{
      if (blogs.length > 0) {
        const storeData = getItemFromLS();
-       console.log(storeData);
+      
        const savedData = []
 
        for(const id of storeData){
