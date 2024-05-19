@@ -12,9 +12,11 @@ function App() {
 
 // adding bookmark
    const handleBookmarkBTN = blog =>{
-   
-   
      const bookmarkItem = [...bookmarks, blog]
+     const existBookmarks = bookmarkItem.find(booked => booked.id === blog.id)
+     if(existBookmarks){
+      return alert('This Blog Already Exists')
+     }
      setBookmark(bookmarkItem)
      addDataToLS(blog.id)
    
@@ -54,12 +56,13 @@ function App() {
 
   const handleReadingTime = time =>{
     setReadingTime(readingTime + time)
+    
   }
  
   return (
     <div className='max-w-7xl mx-auto'>
       <Header/>
-      <div className='grid grid-cols-3 justify-center'>
+      <div className='grid grid-cols-3 justify-center  '>
         <div className='col-span-2'>
 
         <Blogs 
